@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBTIS 102 - Página Principal</title>
+    <link rel="shortcut icon" href="Imagenes/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CBTIS 102</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="alumnos.html">Alumnos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <!-- Sección 1: Información de Contacto -->
+<section id="contact-info" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="p-4 bg-white rounded shadow-sm" style="border-left: 4px solid #007bff;">
+        <h2 class="fw-bold text-center" style="color: #2c3e50;">Información de Contacto</h2>
+        <p class="lead text-center" style="color: #6c757d;">
+          Ponte en contacto con nosotros para resolver tus dudas o compartir tus comentarios.
+        </p>
+        <div class="row text-center mt-4">
+          <!-- Teléfono -->
+          <div class="col-md-4">
+            <i class="fas fa-phone fa-2x" style="color: #007bff;"></i>
+            <h5 class="mt-2">Teléfono</h5>
+            <p style="color: #6c757d;">273 738 0181</p>
+          </div>
+          <!-- Correo -->
+          <div class="col-md-4">
+            <i class="fas fa-envelope fa-2x" style="color: #007bff;"></i>
+            <h5 class="mt-2">Correo</h5>
+            <p style="color: #6c757d;">contacto@cbtis102.edu.mx</p>
+          </div>
+          <!-- Dirección -->
+          <div class="col-md-4">
+            <i class="fas fa-map-marker-alt fa-2x" style="color: #007bff;"></i>
+            <h5 class="mt-2">Dirección</h5>
+            <p style="color: #6c757d;">Av. Paso del Macho 123, Paso del Macho, México</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección 2: Formulario de Contacto -->
+  <section id="contact-form" class="py-5" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="p-4 bg-white rounded shadow-sm" style="border-left: 4px solid #17a2b8;">
+        <h2 class="fw-bold text-center" style="color: #2c3e50;">Formulario de Contacto</h2>
+        <p class="lead text-center" style="color: #6c757d;">
+          Completa el siguiente formulario y te responderemos a la brevedad.
+        </p>
+        <form action="ruta_al_procesamiento_formulario.php" method="POST" class="mt-4">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+<!-- Sección 3: Nuestra Ubicación -->
+<section id="ubicacion" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="p-4 bg-white rounded shadow-sm" style="border-left: 4px solid #ffc107;">
+        <h2 class="fw-bold text-center" style="color: #2c3e50;">Nuestra Ubicación</h2>
+        <p class="lead text-center" style="color: #6c757d;">
+          Ven a visitarnos y conoce nuestras instalaciones en el Centro de Bachillerato Tecnológico Industrial y de Servicios Número 102, Paso del Macho, Veracruz.
+        </p>
+        <div class="mt-4">
+          <!-- iframe de Google Maps actualizado con la dirección -->
+          <iframe
+            src="https://www.google.com/maps?q=Centro%20de%20Bachillerato%20Tecnol%C3%B3gico%20Industrial%20y%20de%20Servicios%20N%C3%BAmero%20102,%20Paso%20del%20Macho,%20Veracruz&output=embed"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Sección 4: Redes Sociales -->
+  <section id="redes-sociales" class="py-5" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="p-4 bg-white rounded shadow-sm" style="border-left: 4px solid #e83e8c;">
+        <h2 class="fw-bold text-center" style="color: #2c3e50;">Síguenos en Redes Sociales</h2>
+        <p class="lead text-center" style="color: #6c757d;">
+          Mantente informado y conectado a través de nuestras plataformas sociales.
+        </p>
+        <div class="d-flex justify-content-center mt-4">
+          <a href="https://www.facebook.com/Cbtis102Padelma" class="btn btn-outline-primary mx-2" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/cbtis_102_paso_del_macho/" class="btn btn-outline-danger mx-2" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://www.youtube.com/cbtis102" class="btn btn-outline-dark mx-2" target="_blank">
+            <i class="fab fa-youtube"></i> YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+    <!-- Pie de pagina -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Enlaces útiles -->
+                <div class="col-12 col-md-3">
+                    <h5 class="fw-bold">Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./alumnos.html">Alumnos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contactanos</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 2: Sobre nosotros -->
+                <div class="col-12 col-md-6">
+                    <h5 class="fw-bold">Sobre nosotros</h5>
+                    <p>"En CBTIS 102 nos dedicamos a formar líderes con valores, conocimiento y habilidades para enfrentar los retos del futuro. ¡Comprometidos con tu éxito académico y profesional!"</p>
+                </div>
+                <!-- Columna 3: Contáctenos -->
+                <div class="col-12 col-md-3">
+                    <h5 class="fw-bold">Contáctenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="*" class="text-white text-decoration-none">correo</a></li>
+                        <li><a href="tel:+15555555556" class="text-white text-decoration-none">273 738 0181</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
